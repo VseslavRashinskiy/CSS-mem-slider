@@ -123,3 +123,31 @@ img{
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.slider {
+		order: 1;
+	}
+
+	.controls{
+		order: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 1rem;
+	}
+
+	label{
+		height: 0.5em;
+		width: 0.5em;
+	}
+
+	.text {
+		order: 3;
+		padding-top: 0;
+	}
+}
