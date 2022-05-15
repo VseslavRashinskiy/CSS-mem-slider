@@ -77,3 +77,36 @@ img{
 	height: 100%;
 	object-fit: contain;
 }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4 {
+	display: block;
+	opacity: 1;
+	z-index: 1;
+	animation-name: moves ;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+.roll {
+	opacity: 0;
+	z-index: 0;
+	display: none;
+	margin: 0;
+}
+
+#slide1:checked ~ .text > .text1,
+#slide2:checked ~ .text > .text2,
+#slide3:checked ~ .text > .text3,
+#slide4:checked ~ .text > .text4 {
+	display: block;
+	opacity: 1;
+	z-index: 1;
+	animation-name: moves ;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
