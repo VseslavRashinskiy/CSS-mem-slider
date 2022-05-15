@@ -1,0 +1,39 @@
+body{
+    background-color: #282d30;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 6.25rem auto 0;
+	max-width: 80rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+p{
+	color: #ddd;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.slider {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	max-width: 80rem;
+}
+
+.text {
+	overflow: hidden;
+	padding-top: 1rem;
+}
+
+.controls {
+	padding-top: 1rem;
+}
+
+.wrapper > input{
+    display: none;
+}
+
